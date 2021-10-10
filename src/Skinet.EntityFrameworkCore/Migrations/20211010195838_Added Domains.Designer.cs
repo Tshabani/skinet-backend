@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Skinet.EntityFrameworkCore;
 
 namespace Skinet.Migrations
 {
     [DbContext(typeof(SkinetDbContext))]
-    partial class SkinetDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211010195838_Added Domains")]
+    partial class AddedDomains
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
